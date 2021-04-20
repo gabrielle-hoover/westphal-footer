@@ -98,9 +98,6 @@ address {
 
 /* media queries */
 @media screen and (min-width: 740px) {
-	body {
-		background-color: aqua;
-	}
 	footer {
 		display: block;
 		height: 120px;
