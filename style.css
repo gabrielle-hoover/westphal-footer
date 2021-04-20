@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+/* color variables */
+:root {
+    --gold: #FFC600;
+    --blue: #07294D;
+    --border: #d6a831;
+    --text: #333;
+}
+
+/* footer styling */
+footer img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--gold);
+    height: min-content;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: var(--text);
+    padding: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+/* ambition can't wait */
+.ambition {
+    background-color: var(--blue);
+    width: min-content;
+    padding: 1rem;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+}
+
+.ambition img {
+    width: 105px;
+}
+
+/* links */
+.links {
+    margin-bottom: 1rem;
+}
+
+.links a {
+    padding: 0 .5rem;
+    border-left: var(--border) 1px solid;
+    height: min-content;
+    line-height: 1.5rem;
+}
+
+.links a:first-child {
+    border: none;
+}
+
+/* social icons */
+.social {
+    margin-bottom: .5rem;
+}
+.social-links {
+    display: flex;
+    flex-direction: row;
+}
+.social svg {
+    width: 30px;
+    filter: invert(13%) sepia(67%) saturate(1253%) hue-rotate(185deg) brightness(96%) contrast(102%); /* drexel blue */
+    margin-right:.25rem;
+}
+.social p {
+    margin-bottom: .5rem;
+}
+
+
+/* address */
+address {
+    font-style: normal;
+    border-top: var(--border) 1px solid;
+    line-height: 1.25rem;
+    padding-top: .5rem;
+}
