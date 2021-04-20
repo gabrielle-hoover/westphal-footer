@@ -28,6 +28,7 @@ footer {
     font-size: 11px;
     color: var(--text);
     padding: 1rem;
+	 bottom: 0;
 }
 
 footer a {
@@ -88,4 +89,48 @@ address {
     border-top: var(--border) 1px solid;
     line-height: 1.25rem;
     padding-top: .5rem;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 0;
+}
+
+/* media queries */
+@media screen and (min-width: 740px) {
+	body {
+		background-color: aqua;
+	}
+	footer {
+		display: block;
+		height: 120px;
+	}
+	.ambition {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		bottom: 0;
+		margin-bottom: 0;
+		width: 115px;
+		padding: 9px 6px;
+		height: 158px;
+		transition: height 0.125s;
+		transition-timing-function: ease;
+	}
+	.ambition:hover {
+		height: 165px;
+	}
+	.footer-text, address {
+		display: flex;
+		align-items: flex-end;
+		width: calc(100% - 150px);
+		margin-left: 150px;
+	}
+	.footer-text {
+		justify-content: space-around;
+	}
+	address {
+		display: flex;
+		justify-content: center;
+	}
 }
