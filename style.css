@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0; 
 }
-
+/* START COPY FOR WORDPRESS HERE */
 /* color variables */
 :root {
     --gold: #FFC600;
@@ -92,7 +92,8 @@ address {
 }
 
 .bottom {
-	position: absolute;
+	position: relative;
+	z-index: 10000;
 	bottom: 0;
 }
 
@@ -131,3 +132,4 @@ address {
 		justify-content: center;
 	}
 }
+/* END COPY FOR WORDPRESS HERE */
